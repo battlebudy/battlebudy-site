@@ -67,6 +67,9 @@ a.card:focus-visible {
   box-shadow: inset 0 0 0 3px var(--signal);
 }
 .card.static { border-left-color: var(--line); }
+.card:has(.icon) { display: grid; grid-template-columns: auto 1fr; column-gap: 16px; align-items: center; }
+.icon { grid-row: span 2; display: flex; gap: 8px; }
+.icon img { display: block; width: 36px; height: 36px; }
 .name { display: block; font-size: 1.15rem; font-weight: 700; }
 .handle { display: block; margin-top: 2px; color: var(--muted); font-family: Consolas, "Courier New", monospace; font-size: 0.95rem; }
 .desc { display: block; margin-top: 2px; color: var(--muted); font-size: 1rem; }
