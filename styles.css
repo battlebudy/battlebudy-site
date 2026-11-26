@@ -97,6 +97,18 @@ a.app .name { font-size: 1.4rem; }
 .action { flex: none; font-weight: 700; color: var(--sand); }
 a.app:focus-visible .action { color: var(--signal); }
 
+/* Search box (Stremio addons / Trakt lists pages) */
+.search { margin: 0 0 8px; }
+.search input {
+  width: 100%; padding: 16px 20px; font: inherit; font-size: 1.1rem;
+  color: var(--text); background: var(--panel); border: 2px solid var(--line); border-left: 6px solid var(--sand);
+}
+.search input::placeholder { color: var(--muted); }
+.search input:focus { outline: none; border-color: var(--signal); }
+.search-status { margin: 0 0 20px; min-height: 1.4em; color: var(--muted); font-size: 0.95rem; }
+.search-status a { color: var(--sand); }
+[hidden] { display: none !important; }
+
 footer { margin-top: 56px; color: var(--muted); font-size: 0.9rem; max-width: 60ch; }
 
 @media (max-width: 560px) {

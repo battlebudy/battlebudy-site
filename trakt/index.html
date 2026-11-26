@@ -21,6 +21,12 @@
   </div>
 </a>
 
+<div class="search">
+  <label for="q" class="note">Search this page</label>
+  <input id="q" type="search" placeholder="Try: horror, Marvel, Pixar, anime…" autocomplete="off" data-trakt-search="https://stremio.battlebudy.com/api/search-lists?q=">
+</div>
+<p class="search-status" id="q-status" aria-live="polite"></p>
+
 <!--
   HOW TO EDIT THIS PAGE
   - Sections: <h2> = main group, <h3 class="sub"> = smaller group inside it.
@@ -395,7 +401,10 @@
   </li>
 </ul>
 
+<div id="q-more" aria-live="polite"></div>
+
 <footer>These are public lists made by Trakt users; their owners can change them. The Kids filter in My Trakt Lists hides anything rated above it.</footer>
 
+<script src="../search.js"></script>
 </body>
 </html>
